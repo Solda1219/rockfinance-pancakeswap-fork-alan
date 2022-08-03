@@ -1,0 +1,73 @@
+{
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"]
+      }
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "extends": "@pancakeswap/eslint-config-pancake",
+  "rules": {
+    "camelcase": 0,
+    "no-alert": 0,
+    "no-case-declarations": 0,
+    "no-await-in-loop": 0,
+    "default-case": 0,
+    "class-methods-use-this": 0,
+    "react/jsx-curly-brace-presence":0,
+    "import/order":0,
+    "spaced-comment":0,
+    "import/no-unresolved":0,
+    "import/extensions":0,
+    "react/no-unused-prop-types":0,
+    "no-unneeded-ternary":0,
+    "react/self-closing-comp":0,
+    "@typescript-eslint/no-extra-semi": 0,
+    "no-restricted-globals":0,
+    "lines-between-class-members":0,
+    "dot-notation":0,
+    "react-hooks/exhaustive-deps":0,
+    "no-bitwise":0,
+    "one-var":0,
+    "no-var":0,
+    "react/destructuring-assignment":0,
+    "prefer-template":0,
+    "no-else-return":0,
+    "vars-on-top":0,
+    "block-scoped-var":0,
+    "@typescript-eslint/no-shadow":0,
+    "consistent-return":0,
+    "no-lone-blocks":0,
+    "react-hooks/rules-of-hooks":0,
+    "no-unused-expressions":0,
+    "no-sequences":0,
+    "import/named": 0,
+    "no-console": ["warn", { "allow": ["info", "warn", "error", "debug"] }],
+    "no-plusplus": 0,
+    "prefer-destructuring": ["warn", { "object": true, "array": false }],
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+    // Start temporary rules
+    // These rules are here just to keep the lint error to 0 during the migration to the new rule set
+    // They need to be removed and fixed as soon as possible
+    "@typescript-eslint/ban-ts-comment": [1, { "ts-ignore": false, "ts-nocheck": false }],
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "radix": 0,
+    "import/no-extraneous-dependencies": 0,
+    "jsx-a11y/media-has-caption": 0,
+    // Exchange
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state", "memo"] }],
+    "react/require-default-props": 0,
+    "no-nested-ternary": 0,
+    "max-classes-per-file": 0,
+    "jsx-a11y/anchor-is-valid":0
+    // End temporary rules
+  }
+}

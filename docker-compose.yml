@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+    app:
+        image: node:current-alpine3.14
+        volumes: 
+          - ./:/app
+        working_dir: /app
+        ports:
+          - 3000:3000
+        command: npm start
+        tty: true
+
